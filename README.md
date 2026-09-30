@@ -12,6 +12,14 @@ This repo keeps that three-step shape — script, voice, render — and changes 
 - **Rendering is still Remotion**, with new scene components: kinetic type on a dark frame, slide cuts, and a facts scene for projects that should not show star counts.
 - Star and fork numbers appear only if you put real ones in the script. The sample uses a problem hook and a facts scene.
 
+## Demo
+
+<video src="https://github.com/BhavikDodda/local-repovideo/raw/main/local-repovideo.mp4" controls width="100%"></video>
+
+[local-repovideo.mp4](local-repovideo.mp4)
+
+The brief is [repo-context-example.md](repo-context-example.md). The script is [analysis-example.json](analysis-example.json).
+
 ## Try the sample
 
 Python 3.10+, Node.js 18+, and FFmpeg need to be on your PATH.
@@ -22,7 +30,7 @@ cd local-repovideo
 python generate.py --analysis analysis-example.json --output local-repovideo.mp4
 ```
 
-The first run creates a virtualenv, installs edge-tts, installs Remotion, and downloads a headless Chrome. A rendered copy of that sample is already in this folder: `local-repovideo.mp4`. The brief it came from is `repo-context-example.md`, and the script is `analysis-example.json`. Those three files are meant to be committed.
+The first run creates a virtualenv, installs edge-tts, installs Remotion, and downloads a headless Chrome. It writes over `local-repovideo.mp4`.
 
 FFmpeg: `winget install Gyan.FFmpeg` on Windows, `brew install ffmpeg` on macOS, `sudo apt install ffmpeg` on Debian or Ubuntu.
 
@@ -60,15 +68,17 @@ python generate.py --output D:\videos\demo.mp4
 
 `scenes` in the JSON picks the order. Each chosen scene needs a `voiceover` line.
 
-| Scene | On screen |
-| --- | --- |
-| `hook` | Opening line. `hookStyle` is `problem`, `momentum`, or `counter`. |
-| `what` | Project name and tagline. |
-| `features` | Up to four cards. |
-| `tech` | Stack pills. |
-| `facts` | Up to three figures. Integer values count up. |
-| `stats` | Stars, forks, and language. Use this only with counts you actually know. |
-| `cta` | Name, tagline, and a closing pill. |
+
+| Scene      | On screen                                                                |
+| ---------- | ------------------------------------------------------------------------ |
+| `hook`     | Opening line. `hookStyle` is `problem`, `momentum`, or `counter`.        |
+| `what`     | Project name and tagline.                                                |
+| `features` | Up to four cards.                                                        |
+| `tech`     | Stack pills.                                                             |
+| `facts`    | Up to three figures. Integer values count up.                            |
+| `stats`    | Stars, forks, and language. Use this only with counts you actually know. |
+| `cta`      | Name, tagline, and a closing pill.                                       |
+
 
 `counter` and `momentum` need a real `stars` value (1000+ and 100+). Smaller numbers fall through to the problem hook.
 
@@ -90,4 +100,3 @@ out/                        other renders (gitignored)
 
 MIT. See [LICENSE](LICENSE).
 
-RepoToVideo is also MIT. This repository does not copy that codebase. The pipeline idea, the scene list, and the Remotion render step come from that project. The collector, the Cursor script step, the voice step, and the scene components here are new.
