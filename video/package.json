@@ -1,0 +1,19 @@
+{
+  "name": "local-repovideo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.248",
+    "@remotion/transitions": "4.0.248",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.248"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.18",
+    "typescript": "5.7.3"
+  }
+}

@@ -1,0 +1,10 @@
+.venv/
+out/
+props.json
+repo-context.md
+analysis.json
+video/public/audio/
+video/node_modules/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,54 @@
+{
+  "name": "local-repovideo",
+  "fullName": "local-repovideo",
+  "description": "Turn a folder on your machine into a short explainer video.",
+  "language": "Python",
+  "stars": 0,
+  "forks": 0,
+  "hookStyle": "problem",
+  "hookText": "A folder on disk is enough.",
+  "tagline": "A folder in. A short video out.",
+  "features": [
+    {
+      "emoji": "📁",
+      "title": "Local folder",
+      "desc": "Nothing is fetched from a GitHub page"
+    },
+    {
+      "emoji": "✍️",
+      "title": "Cursor script",
+      "desc": "Scene lines go in analysis.json"
+    },
+    {
+      "emoji": "🎤",
+      "title": "Neural voice",
+      "desc": "edge-tts, or Windows speech offline"
+    },
+    {
+      "emoji": "🎬",
+      "title": "Remotion",
+      "desc": "Kinetic type, cut to 1080p"
+    }
+  ],
+  "techStack": [
+    { "emoji": "🐍", "name": "Python" },
+    { "emoji": "⚛️", "name": "Remotion" },
+    { "emoji": "🎤", "name": "edge-tts" },
+    { "emoji": "🎞️", "name": "FFmpeg" }
+  ],
+  "facts": [
+    { "value": "0", "label": "API keys" },
+    { "value": "1", "label": "local folder" },
+    { "value": "1080p", "label": "picture" }
+  ],
+  "scenes": ["hook", "what", "features", "tech", "facts", "cta"],
+  "voice": "en-US-AndrewNeural",
+  "voiceover": {
+    "hook": "A public repo page is optional. A folder on your machine is enough.",
+    "what": "local-repovideo turns that folder into a short explainer. Cursor writes the script. This tool speaks it and renders the picture.",
+    "features": "Point it at a local folder. It writes a brief and does not upload it. Cursor fills in the scene lines. edge-tts speaks them, and Remotion renders 1080p. On Windows you can stay offline.",
+    "tech": "Python collects the brief and drives the render. Remotion draws the frames. edge-tts speaks. FFmpeg measures the audio.",
+    "facts": "No Gemini key. One folder. A 1080p video when it finishes.",
+    "cta": "Collect a brief, write the script, and render."
+  }
+}
