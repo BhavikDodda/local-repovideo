@@ -14,7 +14,11 @@ This repo keeps that three-step shape — script, voice, render — and changes 
 
 ## Demo
 
-<video src="https://github.com/BhavikDodda/local-repovideo/raw/main/local-repovideo.mp4" controls width="100%"></video>
+Ran this pipeline on this project itself. See the output:
+
+https://github.com/user-attachments/assets/12cc7b72-6da0-4a8e-a9a4-80149b74c1a4
+
+
 
 [local-repovideo.mp4](local-repovideo.mp4)
 
